@@ -13,7 +13,6 @@
 		943C2A841815ECE6005123DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 943C2A821815ECE6005123DB /* InfoPlist.strings */; };
 		943C2A861815ECE6005123DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 943C2A851815ECE6005123DB /* main.m */; };
 		943C2A8A1815ECE6005123DB /* NHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 943C2A891815ECE6005123DB /* NHAppDelegate.m */; };
-		943C2A8D1815ECE6005123DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 943C2A8B1815ECE6005123DB /* Main.storyboard */; };
 		943C2A901815ECE6005123DB /* NHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 943C2A8F1815ECE6005123DB /* NHViewController.m */; };
 		943C2A921815ECE6005123DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 943C2A911815ECE6005123DB /* Images.xcassets */; };
 		943C2A991815ECE6005123DB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943C2A981815ECE6005123DB /* XCTest.framework */; };
@@ -21,6 +20,11 @@
 		943C2A9B1815ECE6005123DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943C2A7D1815ECE6005123DB /* UIKit.framework */; };
 		943C2AA31815ECE6005123DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 943C2AA11815ECE6005123DB /* InfoPlist.strings */; };
 		943C2AA51815ECE6005123DB /* week1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 943C2AA41815ECE6005123DB /* week1Tests.m */; };
+		943C2AB11815F293005123DB /* NHPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 943C2AB01815F293005123DB /* NHPerson.m */; };
+		943C2AB4181600FA005123DB /* NHAwesomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 943C2AB3181600FA005123DB /* NHAwesomeViewController.m */; };
+		943C2AB8181601C3005123DB /* 25-weather.png in Resources */ = {isa = PBXBuildFile; fileRef = 943C2AB6181601C3005123DB /* 25-weather.png */; };
+		943C2AB9181601C3005123DB /* 25-weather@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 943C2AB7181601C3005123DB /* 25-weather@2x.png */; };
+		943C2ABC181604D6005123DB /* NHCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 943C2ABB181604D6005123DB /* NHCustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +48,6 @@
 		943C2A871815ECE6005123DB /* week1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "week1-Prefix.pch"; sourceTree = "<group>"; };
 		943C2A881815ECE6005123DB /* NHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHAppDelegate.h; sourceTree = "<group>"; };
 		943C2A891815ECE6005123DB /* NHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHAppDelegate.m; sourceTree = "<group>"; };
-		943C2A8C1815ECE6005123DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		943C2A8E1815ECE6005123DB /* NHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHViewController.h; sourceTree = "<group>"; };
 		943C2A8F1815ECE6005123DB /* NHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHViewController.m; sourceTree = "<group>"; };
 		943C2A911815ECE6005123DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +56,15 @@
 		943C2AA01815ECE6005123DB /* week1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "week1Tests-Info.plist"; sourceTree = "<group>"; };
 		943C2AA21815ECE6005123DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		943C2AA41815ECE6005123DB /* week1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = week1Tests.m; sourceTree = "<group>"; };
+		943C2AAE1815EEFD005123DB /* NHFooProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NHFooProtocol.h; path = Protocols/NHFooProtocol.h; sourceTree = "<group>"; };
+		943C2AAF1815F293005123DB /* NHPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPerson.h; sourceTree = "<group>"; };
+		943C2AB01815F293005123DB /* NHPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPerson.m; sourceTree = "<group>"; };
+		943C2AB2181600FA005123DB /* NHAwesomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHAwesomeViewController.h; sourceTree = "<group>"; };
+		943C2AB3181600FA005123DB /* NHAwesomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHAwesomeViewController.m; sourceTree = "<group>"; };
+		943C2AB6181601C3005123DB /* 25-weather.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "25-weather.png"; path = "Images/25-weather.png"; sourceTree = SOURCE_ROOT; };
+		943C2AB7181601C3005123DB /* 25-weather@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "25-weather@2x.png"; path = "Images/25-weather@2x.png"; sourceTree = SOURCE_ROOT; };
+		943C2ABA181604D6005123DB /* NHCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCustomView.h; sourceTree = "<group>"; };
+		943C2ABB181604D6005123DB /* NHCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHCustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +124,19 @@
 		943C2A7F1815ECE6005123DB /* week1 */ = {
 			isa = PBXGroup;
 			children = (
+				943C2AAE1815EEFD005123DB /* NHFooProtocol.h */,
 				943C2A881815ECE6005123DB /* NHAppDelegate.h */,
 				943C2A891815ECE6005123DB /* NHAppDelegate.m */,
-				943C2A8B1815ECE6005123DB /* Main.storyboard */,
 				943C2A8E1815ECE6005123DB /* NHViewController.h */,
 				943C2A8F1815ECE6005123DB /* NHViewController.m */,
 				943C2A911815ECE6005123DB /* Images.xcassets */,
 				943C2A801815ECE6005123DB /* Supporting Files */,
+				943C2AAF1815F293005123DB /* NHPerson.h */,
+				943C2AB01815F293005123DB /* NHPerson.m */,
+				943C2AB2181600FA005123DB /* NHAwesomeViewController.h */,
+				943C2AB3181600FA005123DB /* NHAwesomeViewController.m */,
+				943C2ABA181604D6005123DB /* NHCustomView.h */,
+				943C2ABB181604D6005123DB /* NHCustomView.m */,
 			);
 			path = week1;
 			sourceTree = "<group>";
@@ -126,6 +144,7 @@
 		943C2A801815ECE6005123DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				943C2AB5181601AA005123DB /* Images */,
 				943C2A811815ECE6005123DB /* week1-Info.plist */,
 				943C2A821815ECE6005123DB /* InfoPlist.strings */,
 				943C2A851815ECE6005123DB /* main.m */,
@@ -150,6 +169,15 @@
 				943C2AA11815ECE6005123DB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		943C2AB5181601AA005123DB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				943C2AB6181601C3005123DB /* 25-weather.png */,
+				943C2AB7181601C3005123DB /* 25-weather@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +258,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				943C2A921815ECE6005123DB /* Images.xcassets in Resources */,
+				943C2AB8181601C3005123DB /* 25-weather.png in Resources */,
+				943C2AB9181601C3005123DB /* 25-weather@2x.png in Resources */,
 				943C2A841815ECE6005123DB /* InfoPlist.strings in Resources */,
-				943C2A8D1815ECE6005123DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				943C2AB4181600FA005123DB /* NHAwesomeViewController.m in Sources */,
 				943C2A901815ECE6005123DB /* NHViewController.m in Sources */,
 				943C2A8A1815ECE6005123DB /* NHAppDelegate.m in Sources */,
+				943C2AB11815F293005123DB /* NHPerson.m in Sources */,
 				943C2A861815ECE6005123DB /* main.m in Sources */,
+				943C2ABC181604D6005123DB /* NHCustomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +313,6 @@
 				943C2A831815ECE6005123DB /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		943C2A8B1815ECE6005123DB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				943C2A8C1815ECE6005123DB /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		943C2AA11815ECE6005123DB /* InfoPlist.strings */ = {

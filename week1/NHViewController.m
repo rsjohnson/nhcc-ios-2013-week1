@@ -14,16 +14,41 @@
 
 @implementation NHViewController
 
+- (void) loadView {
+  CGRect frame = [UIScreen mainScreen].bounds;
+  UIView * view = [[UIView alloc] initWithFrame:frame];
+  view.backgroundColor = [UIColor redColor];
+  self.view = view;
+}
+
 - (void)viewDidLoad
 {
+  self.title = @"Custom View Controller";
+  self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Forward"
+                                                                            style:UIBarButtonItemStylePlain
+                                                                          target:self
+                                                                          action:@selector(didTapForward:)];
+  
+  self.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemDownloads
+                                                               tag:10];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void) didTapBack:(id)sender {
+  [self.navigationController popViewControllerAnimated:YES];
 }
+
+- (void) didTapForward:(id)sender {
+  NHViewController * newViewController = [[NHViewController alloc] initWithNibName:nil bundle:nil];
+  newViewController.view.backgroundColor = [UIColor blueColor];
+  [self.navigationController pushViewController:newViewController animated:YES];
+}
+
+
+- (void) viewWillAppear:(BOOL)animated {
+  [super viewWillAppear:animated];
+}
+
 
 @end

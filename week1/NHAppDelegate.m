@@ -7,11 +7,30 @@
 //
 
 #import "NHAppDelegate.h"
+#import "NHViewController.h"
+#import "NHAwesomeViewController.h"
 
 @implementation NHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  CGRect screenFrame = [[UIScreen mainScreen] bounds];
+  self.window = [[UIWindow alloc] initWithFrame:screenFrame];
+  
+  
+  NHViewController * customViewController = [[NHViewController alloc] initWithNibName:nil bundle:nil];
+  UINavigationController * navController = [[UINavigationController alloc] initWithRootViewController:customViewController];
+  
+  NHAwesomeViewController * awesomeViewController = [[NHAwesomeViewController alloc] initWithNibName:nil bundle:nil];
+  
+  UITabBarController * tabController = [[UITabBarController alloc] initWithNibName:nil
+                                                                            bundle:nil];
+  tabController.viewControllers = @[navController, awesomeViewController];
+  
+  
+  self.window.rootViewController = tabController;
+  [self.window makeKeyAndVisible];
+
     // Override point for customization after application launch.
     return YES;
 }
@@ -31,11 +50,13 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
   // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+  NSLog(@"Entering Foreground");
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
   // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+  NSLog(@"Did Become Active");
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

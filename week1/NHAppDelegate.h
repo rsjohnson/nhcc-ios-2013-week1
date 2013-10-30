@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NHFooProtocol.h"
 
-@interface NHAppDelegate : UIResponder <UIApplicationDelegate>
+@interface NHAppDelegate : UIResponder
+<UIApplicationDelegate,
+UITableViewDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
 @end
+
